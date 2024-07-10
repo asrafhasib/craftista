@@ -9,8 +9,9 @@ pipeline{
     stage{"Voting Build"}{
       steps{
         echo 'compiling the voting app...'
-        dir('voting') {
+        dir('voting'){
           sh 'mvn compile'
+        }
       }
     }
   }
